@@ -1,0 +1,12 @@
+services:
+  system-brain-erp:
+    build:
+      context: .
+    container_name: system-brain-erp
+    environment:
+      NODE_ENV: production
+      GEMINI_API_KEY: ${GEMINI_API_KEY:-}
+      APP_URL: ${APP_URL:-http://localhost:5175}
+    ports:
+      - "5175:5175"
+    restart: unless-stopped

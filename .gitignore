@@ -1,0 +1,15 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# Local agent/editor runtime state
+.openclaw/
+.claude/
+.cursor/
+.vscode/
+.git.corrupt-*/
